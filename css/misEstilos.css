@@ -1,0 +1,85 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  .ball {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    border-radius: 50%;
+
+  }
+
+  #container-6 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: black;
+  }
+
+  #rocket {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 2s ease;
+  }
+
+  #rocket.active {
+    transform: translateX(-50%) translateY(-400px);
+  }
+
+  #sunrise {
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(135deg, #ff512f, #f09819);
+    transition: background-color 2s ease;
+  }
+
+  #sunrise.clicked {
+    background-color: #f8c291;
+  }
+
+  #sunrise h2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    line-height: 150px;
+    margin: 0;
+    transition: color 2s ease;
+  }
+
+  #sunrise.clicked h2 {
+    color: #6d4c41;
+  }
+
+
+
+  .cursor {
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  .pepe1 {
+    width: 150px;
+    height: 150px;
+    background-color: #D94A38;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    cursor: move;
+  }
